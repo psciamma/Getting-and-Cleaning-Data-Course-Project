@@ -1,4 +1,4 @@
-setwd("C:/Users/Patrick/Documents/R/data-cleaning/project/UCI HAR Dataset")
+#setwd("C:/Users/Patrick/Documents/R/data-cleaning/project/UCI HAR Dataset")
 
 library(data.table); library(dplyr)
 
@@ -56,3 +56,9 @@ fullsummary <- full %>%
   group_by(activity, subject) %>% 
   summarise_all(funs(mean))
 View(fullsummary)
+
+# save files
+#write.csv(full, "fulltable.csv")
+#write.csv(fullsummary, "summarytable.csv")
+write.table(full, "fulltable.txt", row.name=FALSE)
+write.table(fullsummary, "summarytable.txt", row.name=FALSE)
