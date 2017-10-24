@@ -19,16 +19,20 @@ The following file is available for the train and test data.
 script file:
 - 'run_analysis.R': 
 ======================================
-    Merges the training and the test sets to create one data set, using 'features.txt' for the column labels
+    Reads features.txt, X_train.txt and X_test.txt into R
+    Merges the training and the test sets to create one data set
+    Renames columns using features for the column labels
     Extracts only the measurements on the mean and standard deviation for each measurement.
-    Uses descriptive activity names to name the activities in the data set
-    Adds subject info
+    Reads training and test label files into R
+    Uses descriptive activity names to name the activities in the data set, adds it in a new column as a factor
+    Reads subject info into R and adds it in a new column as a factor
     Appropriately labels the data set with descriptive variable names.
     Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
     
 result files:
 ======================================
-  TBD
+- 'fulltable.csv' : all mean and standard deviation for each measurement in the training and test set, with descriptive variable names anddescriptive activity names
+- 'summarytable.csv' : summary of the above with the average of each variable for each activity and each subject.
 
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
