@@ -16,6 +16,9 @@ data files:
 The following file is available for the train and test data. 
 - 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
 
+codebook:
+- 'codebook.txt' describes each variable used in the result files
+
 script file:
 - 'run_analysis.R': 
 ======================================
@@ -31,7 +34,7 @@ script file:
     
 result files:
 ======================================
-- 'fulltable.csv' : all mean and standard deviation for each measurement in the training and test set, with descriptive variable names anddescriptive activity names
+- 'fulltable.csv' : all mean and standard deviation for each measurement in the training and test set, with descriptive variable names and descriptive activity names
 - 'summarytable.csv' : summary of the above with the average of each variable for each activity and each subject.
 
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
