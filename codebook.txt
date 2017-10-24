@@ -1,0 +1,54 @@
+=======================================
+fulltable.csv
+=======================================
+
+subject: identifier of the subject who carried out the experiment (1 to 30).
+activity: activity performed by the subject (laying, sitting, standing, walking, walking downstairs, walkingupstairs)
+
+Feature Selection 
+=================
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals timeaccelerometer-XYZ and timegyroscope-XYZ. These time domain signals were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (timeBodyaccelerometer-XYZ and timeGravityaccelerometer-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (timeBodyaccelerometerJerk-XYZ and timeBodygyroscopeJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (timeBodyaccelerometerMag, timeGravityaccelerometerMag, timeBodyaccelerometerJerkMag, timeBodygyroscopeMag, timeBodygyroscopeJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing frequencyBodyaccelerometer-XYZ, frequencyBodyaccelerometerJerk-XYZ, frequencyBodygyroscope-XYZ, frequencyBodyaccelerometerJerkMag, frequencyBodygyroscopeMag, frequencyBodygyroscopeJerkMag. 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+timeBodyaccelerometer-XYZ
+timeGravityaccelerometer-XYZ
+timeBodyaccelerometerJerk-XYZ
+timeBodygyroscope-XYZ
+timeBodygyroscopeJerk-XYZ
+timeBodyaccelerometerMag
+timeGravityaccelerometerMag
+timeBodyaccelerometerJerkMag
+timeBodygyroscopeMag
+timeBodygyroscopeJerkMag
+frequencyBodyaccelerometer-XYZ
+frequencyBodyaccelerometerJerk-XYZ
+frequencyBodygyroscope-XYZ
+frequencyBodyaccelerometerMag
+frequencyBodyaccelerometerJerkMag
+frequencyBodygyroscopeMag
+frequencyBodygyroscopeJerkMag
+
+The set of variables that were estimated from these signals are: 
+
+mean: Mean value
+std: Standard deviation
+
+
+=======================================
+summarytable.csv
+=======================================
+
+subject: identifier of the subject who carried out the experiment (1 to 30).
+activity: activity performed by the subject (laying, sitting, standing, walking, walking downstairs, walkingupstairs)
+
+Feature Selection 
+=================
+
+identical to fulltable.csv, where each value is the mean of the variable by subject and activity.
